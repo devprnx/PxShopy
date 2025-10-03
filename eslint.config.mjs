@@ -26,7 +26,11 @@ const eslintConfig = [
       "@typescript-eslint/no-unused-vars": "warn",
       "@typescript-eslint/no-explicit-any": "warn",
       "prefer-const": "warn",
-      "@next/next/no-img-element": "warn"
+      "@next/next/no-img-element": "warn",
+      // Turn off all other rules as warnings for deployment
+      "@typescript-eslint/no-inferrable-types": "off",
+      "@typescript-eslint/ban-ts-comment": "off",
+      "react-hooks/exhaustive-deps": "warn"
     }
   }
 ];

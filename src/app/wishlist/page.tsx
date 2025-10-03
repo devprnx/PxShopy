@@ -3,9 +3,9 @@
 import { motion } from 'framer-motion';
 import { useWishlist } from '@/context/WishlistContext';
 import { useCart } from '@/context/CartContext';
+import { Product } from '@/types';
 import { Heart, ShoppingCart, Trash2, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
-import ProductCard from '@/components/ui/ProductCard';
 
 export default function WishlistPage() {
   const { wishlistItems, removeFromWishlist, clearWishlist, totalWishlistItems } = useWishlist();
@@ -30,7 +30,7 @@ export default function WishlistPage() {
     }
   };
 
-  const handleAddToCart = (product: any) => {
+  const handleAddToCart = (product: Product) => {
     addItem({
       id: product.id,
       name: product.name,

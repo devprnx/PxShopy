@@ -2,8 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { ArrowRight, Star, Shield, Truck, Zap, ShoppingBag, Users, Globe, Award, TrendingUp, Heart, Search, Filter, Sparkles, Clock, Gift } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+import { ArrowRight, Star, Shield, Truck, ShoppingBag, Users, Globe, Award, TrendingUp, Heart, Search, Sparkles, Clock, Gift } from 'lucide-react';
 import Link from 'next/link';
 import MotionWrapper from "@/components/ui/MotionWrapper";
 import ProductCard from "@/components/ui/ProductCard";
@@ -141,7 +140,6 @@ const testimonials = [
 export default function Home() {
   const [visibleStats, setVisibleStats] = useState(false);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
-  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {

@@ -15,13 +15,12 @@ import {
   Bell,
   Edit3,
   Eye,
-  Calendar,
   TrendingUp
 } from 'lucide-react';
 
 export default function ProfilePage() {
   const { user, signOut } = useAuth();
-  const { items, totalAmount, totalItems } = useCart();
+  const { totalItems } = useCart();
   const [activeTab, setActiveTab] = useState('overview');
 
   const stats = [

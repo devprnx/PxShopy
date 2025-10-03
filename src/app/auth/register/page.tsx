@@ -18,7 +18,7 @@ export default function RegisterPage() {
   const router = useRouter();
   const { signUp } = useAuth();
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => { {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
     if (!email || !password || !confirmPassword) {
